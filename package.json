@@ -13,7 +13,8 @@
     "@nextui-org/react": "^2.0.5",
     "framer-motion": "^10.15.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.14.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

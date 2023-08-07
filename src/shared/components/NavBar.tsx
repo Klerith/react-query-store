@@ -38,9 +38,7 @@ export const NavBar = () => {
       </NavbarContent>
 
       <NavbarContent justify="end">
-        <NavbarItem className="hidden lg:flex">
-          <NavLink to="/">Login</NavLink>
-        </NavbarItem>
+        
         <NavbarItem>
 
           <Button as={NavLink} color="primary" to="/" variant="flat">

@@ -24,7 +24,7 @@ export const ProductCard = () => {
 
         <p className="text-xl font-black text-gray-800">
           $110
-          <span className="font-normal text-gray-600 text-base">/night</span>
+          <span className="font-normal text-gray-600 text-base"> +impuesto</span>
         </p>
       </div>
     </Card>

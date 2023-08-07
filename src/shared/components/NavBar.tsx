@@ -1,48 +1,52 @@
 
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button } from "@nextui-org/react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import styles from './NavBar.module.css'
 
 import { AcmeLogo } from "./AcmeLogo";
 
+
+const routes = [
+  { to: '/', text: 'Todo' },
+  { to: '/men', text: 'Hombres' },
+  { to: '/women', text: 'Mujeres' },
+]
+
 export const NavBar = () => {
+
   return (
     <Navbar>
       <NavbarBrand>
         <AcmeLogo />
         <p className="font-bold text-inherit">ACME</p>
       </NavbarBrand>
-      
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link to="/" color="foreground">
-            Todo
-          </Link>
-        </NavbarItem>
-        
-        <NavbarItem>
-          <Link to="/" color="foreground">
-            Hombres
-          </Link>
-        </NavbarItem>
 
-        <NavbarItem>
-          <Link color="foreground" to="/">
-            Mujeres
-          </Link>
-        </NavbarItem>
+      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+
+        {
+          routes.map(({ to, text }) => (
+            <NavbarItem key={to}>
+              <NavLink to={ to } className={({ isActive }) => isActive? styles.active : styles.inactive }>
+                { text }
+              </NavLink>
+            </NavbarItem>
+          ))
+        }
+
+
 
       </NavbarContent>
 
       <NavbarContent justify="end">
         <NavbarItem className="hidden lg:flex">
-          <Link to="/">Login</Link>
+          <NavLink to="/">Login</NavLink>
         </NavbarItem>
         <NavbarItem>
-          
-          <Button as={Link} color="primary" to="/" variant="flat">
-            Ingresar
+
+          <Button as={NavLink} color="primary" to="/" variant="flat">
+            Nuevo producto
           </Button>
-          
+
         </NavbarItem>
       </NavbarContent>
     </Navbar>

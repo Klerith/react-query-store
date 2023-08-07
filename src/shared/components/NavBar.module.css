@@ -1,0 +1,12 @@
+
+
+
+.active {
+  @apply text-blue-500;
+  transition: all .2s;
+}
+
+.inactive {
+  @apply text-gray-100;
+  transition: all .2s;
+}

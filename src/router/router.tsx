@@ -1,5 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
-import { StoreLayout } from '../products';
+import { CompleteListPage, MensPage, StoreLayout, WomensPage } from '../products';
 import { ErrorPage } from '../ErrorPage';
 
 
@@ -12,9 +12,20 @@ export const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "products",
-        element: <h1>hola Mundo</h1>
-      }
+        path: "",
+        element: <CompleteListPage />
+      },
+      {
+        path: "men",
+        element: <MensPage />
+      },
+      {
+        path: "women",
+        element: <WomensPage />
+      },
     ]
   },
+  {
+    
+  }
 ]);

@@ -7,7 +7,7 @@ export const StoreLayout = () => {
     <div className="flex flex-col h-screen">
       <NavBar />
       
-      <div className="flex">
+      <div className="flex px-10">
         <Outlet />
       </div>
     </div>

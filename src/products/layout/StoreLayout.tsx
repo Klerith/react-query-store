@@ -1,9 +1,15 @@
-
-
+import { Outlet } from "react-router-dom";
+import { NavBar } from "../../shared";
 
 
 export const StoreLayout = () => {
   return (
-    <div>StoreLayout</div>
+    <div className="flex flex-col h-screen">
+      <NavBar />
+      
+      <div className="flex">
+        <Outlet />
+      </div>
+    </div>
   )
 }

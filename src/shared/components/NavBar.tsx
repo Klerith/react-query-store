@@ -41,7 +41,7 @@ export const NavBar = () => {
         
         <NavbarItem>
 
-          <Button as={NavLink} color="primary" to="/" variant="flat">
+          <Button as={NavLink} color="primary" to="/new" variant="flat">
             Nuevo producto
           </Button>
 

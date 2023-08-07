@@ -10,7 +10,7 @@ import './index.css';
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <NextUIProvider>
-      <main className="dark text-foreground bg-background min-h-min max-h-max">
+      <main className="dark text-foreground bg-background">
         <RouterProvider router={ router } />
       </main>
     </NextUIProvider>

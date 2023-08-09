@@ -11,6 +11,9 @@
   },
   "dependencies": {
     "@nextui-org/react": "^2.0.5",
+    "@tanstack/react-query": "^4.32.6",
+    "@tanstack/react-query-devtools": "^4.32.6",
+    "axios": "^1.4.0",
     "framer-motion": "^10.15.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
